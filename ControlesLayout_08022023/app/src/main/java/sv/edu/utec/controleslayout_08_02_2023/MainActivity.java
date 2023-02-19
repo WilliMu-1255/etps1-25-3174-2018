@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         etInfo=findViewById(R.id.editTextTextMultiLine);
         spPais=findViewById(R.id.spnPais);
 
+        rbFem=findViewById(R.id.rbFemenino);
+        rbMasc=findViewById(R.id.rbMasculino);
+        rbOtr=findViewById(R.id.rbOtros);
+
 /*      Forma 1
         String[]opciones={"Seleccione un pais","Guatemala","El Salvador","Honduras","Nicaragua","Costa Rica","Panamá"};
         ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this,
@@ -70,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public void Almacenar(View v){
         String datos="";
         String seleccion = spPais.getSelectedItem().toString();
+
         if (seleccion.equals("Seleccione un pais")){
             datos="No selecciono ningun pais";
             etInfo.append(datos);
@@ -79,11 +84,11 @@ public class MainActivity extends AppCompatActivity {
                 datos="Guatemala";
             etInfo.append(datos);
         }
-        else if (seleccion.equals("Guatemala")){
+        else if (seleccion.equals("El Salvador")){
             datos="El Salvador";
             etInfo.append(datos);
         }
-        else if (seleccion.equals("Guatemala")){
+        else if (seleccion.equals("Honduras")){
             datos="Honduras";
             etInfo.append(datos);
         }
