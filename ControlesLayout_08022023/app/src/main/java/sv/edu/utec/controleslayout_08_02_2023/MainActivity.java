@@ -12,22 +12,24 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Spinner spPais;
-    EditText etNombres, etApelliodos,etInfo;
+    EditText etNombres, etApellidos,etInfo;
     RadioButton rbFem, rbMasc, rbOtr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //edit text
         etNombres=findViewById(R.id.edtNombres);
-        etApelliodos=findViewById(R.id.edtApellidos);
+        etApellidos=findViewById(R.id.edtApellidos);
         etInfo=findViewById(R.id.editTextTextMultiLine);
+        //Spinner
         spPais=findViewById(R.id.spnPais);
-
+        //Radiobuttons
         rbFem=findViewById(R.id.rbFemenino);
         rbMasc=findViewById(R.id.rbMasculino);
         rbOtr=findViewById(R.id.rbOtros);
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         adaptador.add("Nicaragua");
         adaptador.add("Costa Rica");
         adaptador.add("Panamá");
-        adaptador.add("Seleccione un pais ");//este es el elemento a quitar del spinner
+        adaptador.add("Seleccione un pais");//este es el elemento a quitar del spinner
         spPais.setAdapter(adaptador);
         spPais.setSelection(adaptador.getCount());
 
@@ -74,6 +76,32 @@ public class MainActivity extends AppCompatActivity {
     public void Almacenar(View v){
         String datos="";
         String seleccion = spPais.getSelectedItem().toString();
+        //Get Traer
+        //Set Enviar
+
+        String nombre=etNombres.getText().toString();
+        String apellido=etApellidos.getText().toString();
+        String genero="";
+        String info;
+
+
+        if (rbMasc.isChecked()==false && rbFem.isChecked()==false && rbOtr.isChecked()==false) {
+            Toast mensaje= Toast.makeText(this,"Seleccione un genero",Toast.LENGTH_LONG);
+            mensaje.show();
+        }else {
+
+        if (rbMasc.isChecked()==true)
+        {
+            genero="Masculino";
+        }else if (rbFem.isChecked()==true)
+        {
+            genero="Femenino";
+        }else
+        {
+            genero="otros";
+        }
+        }
+
 
         if (seleccion.equals("Seleccione un pais")){
             datos="No selecciono ningun pais";
@@ -93,6 +121,13 @@ public class MainActivity extends AppCompatActivity {
             etInfo.append(datos);
         }
 
+        info= "Los datos ingresados son los siguientes \n"+
+                "Nombre     : "+nombre+"\n"+
+                "Apellido   : "+apellido+"\n"+
+                "Genero     : "+genero+"\n"+
+                "Pais     : "+datos+"\n";
+
+        etInfo.append(info);
 
     }
 }

@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="16dp"
@@ -20,19 +21,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/tvTitulo"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
+                android:layout_height="57dp"
                 android:autoText="true"
                 android:text="Datos Personales"
                 android:textAlignment="center"
                 android:textColor="#E91E63"
-                android:textSize="20sp" />
+                android:textSize="34sp" />
 
             <EditText
                 android:id="@+id/edtNombres"
@@ -40,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Ingrese sus nombres"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="10sp" />
 
             <EditText
                 android:id="@+id/edtApellidos"
@@ -48,7 +55,8 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Ingrese sus apellidos"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textSize="10sp" />
 
             <TextView
                 android:id="@+id/tvGenero"
@@ -58,24 +66,24 @@
 
             <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="107dp">
 
                 <RadioButton
                     android:id="@+id/rbMasculino"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="36dp"
                     android:text="Masculino" />
 
                 <RadioButton
                     android:id="@+id/rbFemenino"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="36dp"
                     android:text="Femenino" />
 
                 <RadioButton
                     android:id="@+id/rbOtros"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="35dp"
                     android:text="Otros" />
             </RadioGroup>
 
@@ -88,11 +96,11 @@
             <Spinner
                 android:id="@+id/spnPais"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="51dp"
                 android:contextClickable="false"
 
                 android:textAlignment="center"
-                tools:listheader="Seleccione el pais..." />
+                tools:listheader="Seleccione un pais" />
 
             <Button
                 android:id="@+id/btnGuardar"
@@ -104,10 +112,13 @@
             <EditText
                 android:id="@+id/editTextTextMultiLine"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="289dp"
                 android:ems="10"
                 android:gravity="start|top"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:scrollIndicators="right"
+                android:scrollbarStyle="insideOverlay"
+                android:textSize="10sp" />
 
         </LinearLayout>
 
