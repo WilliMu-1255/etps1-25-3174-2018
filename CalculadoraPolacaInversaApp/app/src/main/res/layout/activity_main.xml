@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edtSigno"
+            android:layout_width="276dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Ingrese el signo de la operacion"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/edtNumero"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/edtNumero"
+            app:layout_constraintTop_toBottomOf="@+id/edtNumero2" />
+
+        <EditText
+            android:id="@+id/edtNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el valor 1"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.177" />
+
+        <EditText
+            android:id="@+id/edtNumero2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el valor 2"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNumero"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <Button
+            android:id="@+id/btnCalc"
+            android:layout_width="152dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:onClick="Calc"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="@+id/edtSigno"
+            app:layout_constraintStart_toStartOf="@+id/edtSigno"
+            app:layout_constraintTop_toBottomOf="@+id/edtSigno" />
+
+        <TextView
+            android:id="@+id/txvResult"
+            android:layout_width="74dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/edtSigno"
+            app:layout_constraintStart_toStartOf="@+id/edtSigno"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

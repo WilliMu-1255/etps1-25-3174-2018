@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtValorN"
+        android:layout_width="227dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Ingrese un Valor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="48dp"
+        android:onClick="Resultado"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/edtValorN"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/edtValorN"
+        app:layout_constraintTop_toBottomOf="@+id/edtValorN" />
+
+    <TextView
+        android:id="@+id/txvR3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvR2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txvR2"
+        app:layout_constraintTop_toBottomOf="@+id/txvR2" />
+
+    <TextView
+        android:id="@+id/txvR2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvR1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txvR1"
+        app:layout_constraintTop_toBottomOf="@+id/txvR1" />
+
+    <TextView
+        android:id="@+id/txvR1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalc"
+        app:layout_constraintStart_toStartOf="@+id/btnCalc"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalc" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="164dp"
+        android:layout_height="48dp"
+        android:text=" Incrementar, Decrementarla y Duplicar su valor"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/edtValorN"
+        app:layout_constraintEnd_toEndOf="@+id/edtValorN"
+        app:layout_constraintStart_toStartOf="@+id/edtValorN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
