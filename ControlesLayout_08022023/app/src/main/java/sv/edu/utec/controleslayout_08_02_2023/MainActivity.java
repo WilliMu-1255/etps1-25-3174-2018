@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+
 import android.view.ViewGroup;
+
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         rbFem=findViewById(R.id.rbFemenino);
         rbMasc=findViewById(R.id.rbMasculino);
         rbOtr=findViewById(R.id.rbOtros);
+
 
 /*      Forma 1
         String[]opciones={"Seleccione un pais","Guatemala","El Salvador","Honduras","Nicaragua","Costa Rica","Panamá"};
@@ -71,11 +74,18 @@ public class MainActivity extends AppCompatActivity {
         spPais.setSelection(adaptador.getCount());
 
 
+        String[]opciones={"Seleccione un pais","Guatemala","El Salvador","Honduras","Nicaragua","Costa Rica","Panamá"};
+        ArrayAdapter<String> adaptador= new ArrayAdapter<String>(this,
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item,opciones);
+        spPais.setAdapter(adaptador);
+
+
     }
 
     public void Almacenar(View v){
         String datos="";
         String seleccion = spPais.getSelectedItem().toString();
+
         //Get Traer
         //Set Enviar
 
@@ -112,11 +122,19 @@ public class MainActivity extends AppCompatActivity {
                 datos="Guatemala";
             etInfo.append(datos);
         }
+
         else if (seleccion.equals("El Salvador")){
             datos="El Salvador";
             etInfo.append(datos);
         }
-        else if (seleccion.equals("Honduras")){
+        else if (seleccion.equals("Honduras"))
+        {
+        else if (seleccion.equals("Guatemala")){
+            datos="El Salvador";
+            etInfo.append(datos);
+        }
+        else if (seleccion.equals("Guatemala")){
+
             datos="Honduras";
             etInfo.append(datos);
         }

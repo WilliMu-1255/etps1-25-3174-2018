@@ -93,14 +93,8 @@
                 android:layout_height="wrap_content"
                 android:text="Pais" />
 
-            <Spinner
-                android:id="@+id/spnPais"
-                android:layout_width="match_parent"
-                android:layout_height="51dp"
-                android:contextClickable="false"
 
-                android:textAlignment="center"
-                tools:listheader="Seleccione un pais" />
+
 
             <Button
                 android:id="@+id/btnGuardar"
