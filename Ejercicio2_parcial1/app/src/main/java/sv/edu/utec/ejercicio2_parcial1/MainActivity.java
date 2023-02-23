@@ -23,44 +23,53 @@ public class MainActivity extends AppCompatActivity {
         tvResultado=findViewById(R.id.txvMensaje);
     }
 
-    public void Imc(View v)
+    public void valor (View v)
     {
-        float peso=Float.parseFloat(etP.getText().toString());
-        float altura=Float.parseFloat(etA.getText().toString());
-        /*altura=altura/100;*/
-
-        float IMC = (peso/(altura * altura));
+        tvResultado.setText(" Críticamente Bajo de Peso");
+        double dato1, dato2, resultado;
 
 
-        if (IMC>0 && IMC<=10.5){
-            tvResultado.setText(" Críticamente Bajo de Peso");
+        dato1=Double.parseDouble(etP.getText().toString());
+        dato2=Double.parseDouble(etA.getText().toString());
+        resultado=(dato1)/(dato2 * dato2);
+
+
+
+
+        if (resultado>0 && resultado<=10.5){
+            tvResultado.setText(String.valueOf(resultado)+" Críticamente Bajo de Peso ");
+
 
         }
-        else if (IMC>10.5 && IMC<=15.9){
-            tvResultado.setText(String.valueOf((IMC))+" Severamente Bajo de Peso");
+        else if (resultado>10.5 && resultado<=15.9){
+            tvResultado.setText(String.valueOf(resultado)+" Severamente Bajo de Peso");
         }
-        else if (IMC>15.9 && IMC<=18.5){
-            tvResultado.setText(String.valueOf((IMC))+" Bajo de Peso");
+        else if (resultado>15.9 && resultado<=18.5){
+            tvResultado.setText(String.valueOf(resultado)+" Bajo de Peso");
         }
 
-        else if (IMC>18.5 && IMC<=25){
-            tvResultado.setText(String.valueOf((IMC))+" Normal (peso saludable)");
+        else if (resultado>18.5 && resultado<=25){
+            tvResultado.setText(String.valueOf(resultado)+" Normal (peso saludable)");
         }
-        else if (IMC>25 && IMC<=30)
+        else if (resultado>25 && resultado<=30)
         {
-            tvResultado.setText(String.valueOf((IMC))+" Sobrepeso");
+            tvResultado.setText(String.valueOf(resultado)+" Sobrepeso");
         }
-        else if (IMC>30 && IMC<=35){
+        else if (resultado>30 && resultado<=35){
 
-            tvResultado.setText(String.valueOf((IMC))+" Obesidad Clase 1 - Moderadamente Obeso");
+            tvResultado.setText(String.valueOf(resultado)+" Obesidad Clase 1 - Moderadamente Obeso");
         }
-        else if (IMC>35 && IMC<=40){
+        else if (resultado>35 && resultado<=40){
 
-            tvResultado.setText(String.valueOf((IMC))+" Obesidad Clase 2 - Severamente Obeso");
+            tvResultado.setText(String.valueOf(resultado)+" Obesidad Clase 2 - Severamente Obeso");
         }
-        else if (IMC>50){
+        else if (resultado>50){
 
-            tvResultado.setText(String.valueOf((IMC))+" Obesidad Clase 3 - Críticamente Obeso");
+            tvResultado.setText(String.valueOf(resultado)+" Obesidad Clase 3 - Críticamente Obeso");
+        }else {
+
+            tvResultado.setText("No se puede calcular");
+
         }
 
     }
