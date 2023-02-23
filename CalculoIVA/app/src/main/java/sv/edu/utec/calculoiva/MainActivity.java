@@ -32,5 +32,21 @@ public class MainActivity extends AppCompatActivity {
         tvResultado.setText("El precio con IVA es: "+String.valueOf(num));
 
 
+
+
+
+
+
+     /*
+        • IMC < 10.5 "Críticamente Bajo de Peso";
+• IMC < 15.9 "Severamente Bajo de Peso";
+• IMC < 18.5 "Bajo de Peso";
+• IMC < 25 "Normal (peso saludable)";
+• IMC < 30 "Sobrepeso";
+• IMC < 35 "Obesidad Clase 1 - Moderadamente Obeso";
+• IMC < 40 "Obesidad Clase 2 - Severamente Obeso";
+• Arriba de 50 "Obesidad Clase 3 - Críticamente Obeso";
+*/
+
     }
 }
