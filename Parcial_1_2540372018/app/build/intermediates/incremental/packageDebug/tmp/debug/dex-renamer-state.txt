@@ -1,0 +1,10 @@
+#Wed Feb 22 20:07:59 GMT-06:00 2023
+base.2=C\:\\ProyectosAndroid\\etps1-25-3174-2018\\Parcial_1_2540372018\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+path.2=2/classes.dex
+base.1=C\:\\ProyectosAndroid\\etps1-25-3174-2018\\Parcial_1_2540372018\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+path.1=0/classes.dex
+base.0=C\:\\ProyectosAndroid\\etps1-25-3174-2018\\Parcial_1_2540372018\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
