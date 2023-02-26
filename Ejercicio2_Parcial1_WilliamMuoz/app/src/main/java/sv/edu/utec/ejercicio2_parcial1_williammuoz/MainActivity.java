@@ -17,14 +17,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etP=findViewById(R.id.edtP);
-        etA=findViewById(R.id.edtA);
+        etP=findViewById(R.id.edtV1);
+        etA=findViewById(R.id.edtV2);
 
         tvResultado=findViewById(R.id.txvMensaje);
     }
 
     public void valor (View v)
     {
+
         tvResultado.setText(" Críticamente Bajo de Peso");
         double dato1, dato2, resultado;
 
