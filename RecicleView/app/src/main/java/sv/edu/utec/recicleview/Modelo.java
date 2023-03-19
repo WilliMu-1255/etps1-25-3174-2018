@@ -5,11 +5,10 @@ public class Modelo {
     private String GeneroPeli;
     private String DirecPeli;
     private String AnioPeli;
-    private String ImgPeli;
+    private int ImgPeli;
     private String duraPeli;
     private String fechPeli;
     private double clasificar;
-
 
     public String getNoombPeli() {
         return NoombPeli;
@@ -43,11 +42,11 @@ public class Modelo {
         AnioPeli = anioPeli;
     }
 
-    public String getImgPeli() {
+    public int getImgPeli() {
         return ImgPeli;
     }
 
-    public void setImgPeli(String imgPeli) {
+    public void setImgPeli(int imgPeli) {
         ImgPeli = imgPeli;
     }
 

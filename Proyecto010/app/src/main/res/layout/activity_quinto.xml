@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quinto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C0A5F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_lado2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_lado1"
+            android:layout_alignLeft="@id/et_lado1"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="100dp"
+            android:hint="Lado 2"
+            app:layout_constraintEnd_toEndOf="@+id/btnPrin5"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="@+id/btnPrin5"
+            app:layout_constraintTop_toBottomOf="@+id/btnPrin5" />
+
+        <EditText
+            android:id="@+id/et_lado1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Lado 1"
+            app:layout_constraintEnd_toStartOf="@+id/et_lado2"
+            app:layout_constraintHorizontal_bias="0.965"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_lado3"
+            android:layout_alignLeft="@id/et_lado3"
+            android:layout_marginTop="44dp"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="@+id/et_lado2"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="@+id/et_lado2"
+            app:layout_constraintTop_toBottomOf="@+id/et_lado2" />
+
+        <EditText
+            android:id="@+id/et_lado3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_lado2"
+            android:layout_alignLeft="@id/et_lado2"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="204dp"
+            android:hint="Lado 3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toEndOf="@+id/et_lado2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imvTriangulo"
+            android:layout_width="252dp"
+            android:layout_height="240dp"
+            android:layout_below="@id/btn_calcular"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_calcular" />
+
+        <Button
+            android:id="@+id/btnPrin5"
+            android:layout_width="113dp"
+            android:layout_height="50dp"
+            android:onClick="pantalla"
+            android:text="Principal"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.078" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

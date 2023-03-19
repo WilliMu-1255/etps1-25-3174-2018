@@ -22,7 +22,7 @@ public class Adaptador extends RecyclerView.Adapter<Elementos>{
     @NonNull
     @Override
     public Elementos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view LayoutInflater.from(context.getApplicationContext()).inflate(R.layout.pelicuilas_listado, null));
+        View view = LayoutInflater.from(context.getApplicationContext()).inflate(R.layout.pelicuilas_listado, null);
 
         return new Elementos(view);
     }
@@ -30,11 +30,22 @@ public class Adaptador extends RecyclerView.Adapter<Elementos>{
     @Override
     public void onBindViewHolder(@NonNull Elementos holder, int position) {
         Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+        Elementos.tvgenPel.setText(modelos.get(position).getGeneroPeli());
+        Elementos.imvimgPel.setImageResource(modelos.get(position).getImgPeli());
+
+        Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+        Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+        Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+        Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+        Elementos.tvnomPel.setText(modelos.get(position).getNoombPeli());
+
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+
+        return modelos.size();
     }
 }
