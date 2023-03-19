@@ -102,7 +102,7 @@
             android:id="@+id/textView4"
             android:layout_width="338dp"
             android:layout_height="83dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="32dp"
             android:text="-Muñoz Raymundo William Ernesto 25-3174-2018 -Rivas Hernández Pedro Alberto 25-4037-2018 -Ramírez Hernández José David 25-0591-2017 (Lider)                                                   -Castellón Mazariego Ever Enrique 25-0567-2018"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.493"
