@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A77DC39"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-52dp">
+
+        <TextView
+            android:id="@+id/tvTema"
+            android:layout_width="254dp"
+            android:layout_height="51dp"
+            android:text="Guia 3 ETPS1"
+            android:textAlignment="center"
+            android:textColor="#D81406"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <Button
+            android:id="@+id/btnE1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ejercicio 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnW" />
+
+        <Button
+            android:id="@+id/btnE2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ejercicio 2"
+            app:layout_constraintEnd_toEndOf="@+id/btnE1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnE1"
+            app:layout_constraintTop_toBottomOf="@+id/btnE1" />
+
+        <Button
+            android:id="@+id/btnE3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ejercicio 3"
+            app:layout_constraintEnd_toEndOf="@+id/btnE2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnE2"
+            app:layout_constraintTop_toBottomOf="@+id/btnE2" />
+
+        <Button
+            android:id="@+id/btnE4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Ejercicio 4"
+            app:layout_constraintEnd_toEndOf="@+id/btnE3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnE3"
+            app:layout_constraintTop_toBottomOf="@+id/btnE3" />
+
+        <Button
+            android:id="@+id/btnE5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Ejercicio 5"
+            app:layout_constraintEnd_toEndOf="@+id/btnE4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnE4"
+            app:layout_constraintTop_toBottomOf="@+id/btnE4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="81dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="12dp"
+            android:text="Grupo 9"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvTema"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/tvTema"
+            app:layout_constraintTop_toBottomOf="@+id/tvTema"
+            tools:textAlignment="center"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="338dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="28dp"
+            android:text="-Muñoz Raymundo William Ernesto 25-3174-2018 -Rivas Hernández Pedro Alberto 25-4037-2018 -Ramírez Hernández José David 25-0591-2017 (Lider)                                                   -Castellón Mazariego Ever Enrique 25-0567-2018"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnE5" />
+
+        <Button
+            android:id="@+id/btnA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Acerca de "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btnW"
+            android:layout_width="128dp"
+            android:layout_height="47dp"
+            android:text="WebView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnA" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
