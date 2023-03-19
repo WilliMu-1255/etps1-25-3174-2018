@@ -8,6 +8,19 @@
     tools:context=".tercero">
 
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="315dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="76dp"
+        android:text="carga de 10 números e imprima la suma de los  últimos 5 valores ingresados "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrin3" />
+
     <EditText
         android:id="@+id/edNumeros"
         android:layout_width="395dp"
@@ -18,24 +31,26 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <Button
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="@+id/edNumeros"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="@+id/edNumeros"
         app:layout_constraintTop_toBottomOf="@+id/edNumeros" />
 
     <TextView
         android:id="@+id/tvResultado"
-        android:layout_width="293dp"
-        android:layout_height="48dp"
+        android:layout_width="338dp"
+        android:layout_height="203dp"
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:textSize="24sp"

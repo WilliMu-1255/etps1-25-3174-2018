@@ -76,10 +76,8 @@ public class primero extends AppCompatActivity {
         }
     }*/
 
-    public void pantalla(View v)
-    {
-        Intent i=new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
 
+    public void pantalla(View v) {
+        finish();
     }
 }

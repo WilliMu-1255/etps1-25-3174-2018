@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class tercero extends AppCompatActivity {
     Button btP3;
@@ -32,6 +33,10 @@ public class tercero extends AppCompatActivity {
                 public void onClick(View v) {
                     // Obtener los números ingresados por el usuario
                     String numerosStr = edNumeros.getText().toString().trim();
+                    if (numerosStr.isEmpty()) {
+                        Toast.makeText(tercero.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                        return; // Salir del evento de clic sin continuar
+                    }
                     String[] numerosArr = numerosStr.split(",");
 
                     // Verificar que se hayan ingresado 10 números
@@ -55,10 +60,7 @@ public class tercero extends AppCompatActivity {
 
 
 
-    public void pantalla(View v)
-    {
-        Intent i=new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
-
+    public void pantalla(View v) {
+        finish();
     }
 }

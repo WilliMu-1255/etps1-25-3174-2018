@@ -50,11 +50,12 @@
             android:id="@+id/edtNum"
             android:layout_width="227dp"
             android:layout_height="53dp"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="132dp"
             android:ems="10"
             android:hint="Ingresa un numero entero"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.474"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -82,5 +83,18 @@
             app:layout_constraintHorizontal_bias="0.518"
             app:layout_constraintStart_toStartOf="@+id/btnVeri"
             app:layout_constraintTop_toBottomOf="@+id/btnVeri" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="380dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="36dp"
+            android:text="Indica si el número es  positivo, nulo o negativo"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

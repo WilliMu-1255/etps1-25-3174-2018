@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class cuarto extends AppCompatActivity {
 
@@ -33,8 +34,13 @@ public class cuarto extends AppCompatActivity {
                /* EditText inputText = findViewById(R.id.inputText);
                 TextView outputText = findViewById(R.id.outputText);*/
 
-                String inputString = edNumeros.getText().toString();
-                String[] inputArray = inputString.split(",");
+                String numerosStr = edNumeros.getText().toString();
+                if (numerosStr.isEmpty()) {
+                    Toast.makeText(cuarto.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                    return; // Salir del evento de clic sin continuar
+                }
+
+                String[] inputArray = numerosStr.split(",");
 
                 int cantidadNegativos = 0;
                 int cantidadPositivos = 0;
@@ -70,10 +76,7 @@ public class cuarto extends AppCompatActivity {
 
     }
 
-    public void pantalla(View v)
-    {
-        Intent i=new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
-
+    public void pantalla(View v) {
+        finish();
     }
 }

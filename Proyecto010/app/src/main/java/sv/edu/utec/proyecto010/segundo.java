@@ -27,8 +27,15 @@ public class segundo extends AppCompatActivity {
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+
                 // Obtener el valor ingresado por el usuario
                 String numeroStr = edNumero.getText().toString();
+                if (numeroStr.isEmpty()) {
+                    Toast.makeText(segundo.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                    return; // Salir del evento de clic sin continuar
+                }
 
                 // Validar que el valor ingresado es un número de hasta 3 cifras
                 if (numeroStr.length() <= 3) {
@@ -51,11 +58,8 @@ public class segundo extends AppCompatActivity {
         });
     }
 
-    public void pantalla(View v)
-    {
-        Intent i=new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
-
+    public void pantalla(View v) {
+        finish();
     }
 
        /* btP2.setOnClickListener(new View.OnClickListener() {

@@ -38,6 +38,16 @@ public class quinto extends AppCompatActivity {
                 String strLado1 = etLado1.getText().toString();
                 String strLado2 = etLado2.getText().toString();
                 String strLado3 = etLado3.getText().toString();
+                if (strLado1.isEmpty()) {
+                    Toast.makeText(quinto.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                    return; // Salir del evento de clic sin continuar
+                }else if (strLado2.isEmpty()){
+                    Toast.makeText(quinto.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                    return; // Salir del evento de clic sin continuar
+                } else if (strLado3.isEmpty()) {
+                    Toast.makeText(quinto.this, "Debe ingresar un número", Toast.LENGTH_SHORT).show();
+                    return; // Salir del evento de clic sin continuar
+                }
 
                 // Convertimos los valores a números enteros
                 int lado1 = Integer.parseInt(strLado1);
@@ -61,10 +71,7 @@ public class quinto extends AppCompatActivity {
 
     }
 
-    public void pantalla(View v)
-    {
-        Intent i=new Intent(getApplicationContext(), MainActivity.class);
-        startActivity(i);
-
+    public void pantalla(View v) {
+        finish();
     }
 }
