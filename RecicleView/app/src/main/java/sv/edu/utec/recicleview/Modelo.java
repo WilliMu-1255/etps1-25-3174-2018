@@ -1,76 +1,81 @@
 package sv.edu.utec.recicleview;
 
+import android.graphics.drawable.Drawable;
+
 public class Modelo {
-    private String NoombPeli;
+
+    private String NombrePeli;
     private String GeneroPeli;
-    private String DirecPeli;
+    private String DirectorPeli;
     private String AnioPeli;
     private int ImgPeli;
-    private String duraPeli;
-    private String fechPeli;
-    private double clasificar;
+    private String DuracionPeli;
+    private String FechaPeli;
+private double clasificar;
 
-    public String getNoombPeli() {
-        return NoombPeli;
-    }
 
-    public void setNoombPeli(String noombPeli) {
-        NoombPeli = noombPeli;
+    public String getNombrePeli() {
+        return NombrePeli;
     }
 
     public String getGeneroPeli() {
         return GeneroPeli;
     }
 
-    public void setGeneroPeli(String generoPeli) {
-        GeneroPeli = generoPeli;
-    }
-
-    public String getDirecPeli() {
-        return DirecPeli;
-    }
-
-    public void setDirecPeli(String direcPeli) {
-        DirecPeli = direcPeli;
+    public String getDirectorPeli() {
+        return DirectorPeli;
     }
 
     public String getAnioPeli() {
         return AnioPeli;
     }
 
-    public void setAnioPeli(String anioPeli) {
-        AnioPeli = anioPeli;
-    }
-
     public int getImgPeli() {
         return ImgPeli;
     }
 
-    public void setImgPeli(int imgPeli) {
-        ImgPeli = imgPeli;
+    public String getDuracionPeli() {
+        return DuracionPeli;
     }
 
-    public String getDuraPeli() {
-        return duraPeli;
-    }
-
-    public void setDuraPeli(String duraPeli) {
-        this.duraPeli = duraPeli;
-    }
-
-    public String getFechPeli() {
-        return fechPeli;
-    }
-
-    public void setFechPeli(String fechPeli) {
-        this.fechPeli = fechPeli;
+    public String getFechaPeli() {
+        return FechaPeli;
     }
 
     public double getClasificar() {
         return clasificar;
     }
 
+    public void setNombrePeli(String nombrePeli) {
+        NombrePeli = nombrePeli;
+    }
+
+    public void setGeneroPeli(String generoPeli) {
+        GeneroPeli = generoPeli;
+    }
+
+    public void setDirectorPeli(String directorPeli) {
+        DirectorPeli = directorPeli;
+    }
+
+    public void setAnioPeli(String anioPeli) {
+        AnioPeli = anioPeli;
+    }
+
+    public void setImgPeli(int imgPeli) {
+        ImgPeli = imgPeli;
+    }
+
+    public void setDuracionPeli(String duracionPeli) {
+        DuracionPeli = duracionPeli;
+    }
+
+    public void setFechaPeli(String fechaPeli) {
+        FechaPeli = fechaPeli;
+    }
+
     public void setClasificar(double clasificar) {
         this.clasificar = clasificar;
     }
 }
+
