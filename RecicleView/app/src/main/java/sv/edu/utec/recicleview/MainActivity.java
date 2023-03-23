@@ -59,9 +59,7 @@ Adaptador adaptador;
         modelista.setDirectorPeli("Juan Perez");
         modelista.setGeneroPeli("Ciencia ficcion");
         modelista.setImgPeli(R.drawable.ex_maquina);
-        modelista.setClasificar(3.45);
-        modelista.setDuracionPeli("108 min");
-        modelista.setAnioPeli("1999");
+
         modelos.add(modelista);
 
 

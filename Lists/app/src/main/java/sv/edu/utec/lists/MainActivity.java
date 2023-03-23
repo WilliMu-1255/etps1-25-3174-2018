@@ -2,7 +2,6 @@ package sv.edu.utec.lists;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        listaEmpleados = new ArrayList<>();
+       /* listaEmpleados = new ArrayList<>();
         listaEmpleados.add("Juan");
         listaEmpleados.add("carla");
         listaEmpleados.add("Roberto");
@@ -41,14 +40,14 @@ public class MainActivity extends AppCompatActivity {
             listaEmpleados.add("Jazmin " + i);
         }
         adaptadores = new ArrayAdapter(this,android.R.layout.simple_list_item_1,listaEmpleados); //los objetos lo va a obtener del contexto actual y va a llenarse con los datos del arreglo "listaEmpleados"
-        lstDias.setAdapter(adaptadores);
+        lstDias.setAdapter(adaptadores);*/
 
 
 
 
 
-        /* adaptador=ArrayAdapter.createFromResource(this,R.array.arregloDias, android.R.layout.simple_list_item_1);
-        lstDias.setAdapter(adaptador);*/
+        adaptador=ArrayAdapter.createFromResource(this,R.array.arregloPaises, android.R.layout.simple_list_item_1);
+        lstDias.setAdapter(adaptador);
 
         lstDias.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override

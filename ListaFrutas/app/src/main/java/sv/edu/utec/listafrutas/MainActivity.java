@@ -13,31 +13,31 @@ public class MainActivity extends AppCompatActivity {
     ListView lv1;
 
     Integer[]ImgPpersonas={
-            R.drawable.ana,
-            R.drawable.carlos,
-            R.drawable.fernanda,
-            R.drawable.gustavo,
-            R.drawable.jose,
-            R.drawable.juan,
-            R.drawable.karla,
-            R.drawable.luis,
-            R.drawable.maria,
-            R.drawable.marta,
-            R.drawable.pedro,
-            R.drawable.ana,
-            R.drawable.carlos,
-            R.drawable.fernanda,
-            R.drawable.gustavo,
-            R.drawable.jose,
-            R.drawable.juan,
-            R.drawable.karla,
-            R.drawable.luis,
-            R.drawable.maria,
-            R.drawable.marta,
-            R.drawable.pedro,
-            R.drawable.marta,
-            R.drawable.pedro,
-            R.drawable.silvia
+            R.drawable.manzana,
+            R.drawable.platano,
+            R.drawable.naranja,
+            R.drawable.limon,
+            R.drawable.fresa,
+            R.drawable.melon,
+            R.drawable.sandia,
+            R.drawable.pina,
+            R.drawable.uva,
+            R.drawable.cereza,
+            R.drawable.kiwi,
+            R.drawable.mango,
+            R.drawable.maracuya,
+            R.drawable.papaya,
+            R.drawable.coco,
+            R.drawable.guayaba,
+            R.drawable.higo,
+            R.drawable.ciruela,
+            R.drawable.granada,
+            R.drawable.mandarina,
+            R.drawable.toronja,
+            R.drawable.pera,
+            R.drawable.guanabana,
+            R.drawable.durazno,
+            R.drawable.zarzamora
     };
 
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         listafrutas.add(new frutas("toronja", "Una fruta grande y redonda con piel amarilla y pulpa ácida y jugosa."));
         listafrutas.add(new frutas("pera", "Una fruta alargada y dulce con piel suave y lisa."));
         listafrutas.add(new frutas("guanábana", "Una fruta grande y verde con una pulpa blanca y cremosa, con un sabor dulce y ácido."));
-        listafrutas.add(new frutas("mandarino", "Una fruta pequeña y redonda con piel verde y pulpa jugosa y dulce, similar a la mandarina."));
+        listafrutas.add(new frutas("durazno","tiene forma semejante a un globo. Mide de cinco a siete centímetros y medio y es de color amarillento, con tonalidades rojizas en la parte donde pega el sol"));
         listafrutas.add(new frutas("zarzamora", "Una fruta pequeña y redonda con piel morada y una pulpa jugosa y dulce, utilizada en postres y mermeladas."));
 
         adaptador adaptador = new adaptador(this, listafrutas,ImgPpersonas);
